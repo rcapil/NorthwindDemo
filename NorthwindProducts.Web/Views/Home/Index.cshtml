@@ -1,0 +1,93 @@
+﻿@using NorthwindProducts.Web.Models
+@using Newtonsoft.Json
+
+@model ProductViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+@if (Model.Products != null && Model.Products.Count > 0)
+{
+    <table class="table table-bordered table-striped table-condensed">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Qty/Unit</th>
+                <th>Unit Price</th>
+                <th>Units in Stock</th>
+                <th>Units on Order</th>
+                <th>Reorder Level</th>
+                <th>Discontinued</th>
+                <th>Supplier</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model.Products)
+            {
+                <tr class="@(p.Discontinued ? "danger" : "")">
+                    <td>@p.ProductName</td>
+                    <td class="center">@p.QuantityPerUnit</td>
+                    <td class="center">@string.Format("{0:C}", p.UnitPrice)</td>
+                    <td class="center">@p.UnitsInStock</td>
+                    <td class="center">@p.UnitsOnOrder</td>
+                    <td class="center">@p.ReorderLevel</td>
+                    <td class="center">@p.Discontinued</td>
+                    <td><a href="#" class="supplier-name" data-toggle="modal" data-target="#myModal" data-supplier="@JsonConvert.SerializeObject(p.Supplier)">@p.Supplier.CompanyName</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="row">
+        <div class="well well-lg">
+            <span>No products to display.</span>
+        </div>
+    </div>
+}
+
+<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <dl class="dl-horizontal">
+                        <dt>Contact Name:</dt>
+                        <dd class="contact-name"></dd>
+                        <dt>Address</dt>
+                        <dd class="address"></dd>
+                        <dt>City</dt>
+                        <dd class="city"></dd>
+                        <dt>Postal Code</dt>
+                        <dd class="postal-code"></dd>
+                        <dt>Region</dt>
+                        <dd class="region"></dd>
+                        <dt>Country</dt>
+                        <dd class="country"></dd>
+                        <dt>Phone</dt>
+                        <dd class="phone"></dd>
+                        <dt>Fax</dt>
+                        <dd class="fax"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    @Scripts.Render("~/Scripts/home/index.js")
+}

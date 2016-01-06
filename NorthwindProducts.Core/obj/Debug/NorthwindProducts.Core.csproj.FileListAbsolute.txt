@@ -1,0 +1,5 @@
+C:\GitHub\NorthwindProducts\NorthwindProducts.Core\bin\Debug\NorthwindProducts.Core.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Core\bin\Debug\NorthwindProducts.Core.pdb
+C:\GitHub\NorthwindProducts\NorthwindProducts.Core\obj\Debug\NorthwindProducts.Core.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Core\obj\Debug\NorthwindProducts.Core.pdb
+C:\GitHub\NorthwindProducts\NorthwindProducts.Core\obj\Debug\NorthwindProducts.Core.csprojResolveAssemblyReference.cache

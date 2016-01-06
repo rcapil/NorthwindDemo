@@ -1,0 +1,14 @@
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\App_Data\Northwind.mdf
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\App_Data\Northwind_log.ldf
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\NorthwindProducts.Infrastructure.dll.config
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\NorthwindProducts.Infrastructure.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\NorthwindProducts.Infrastructure.pdb
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\EntityFramework.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\EntityFramework.xml
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\obj\Debug\NorthwindProducts.Infrastructure.csprojResolveAssemblyReference.cache
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\obj\Debug\NorthwindProducts.Infrastructure.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\obj\Debug\NorthwindProducts.Infrastructure.pdb
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\NorthwindProducts.Core.dll
+C:\GitHub\NorthwindProducts\NorthwindProducts.Infrastructure\bin\Debug\NorthwindProducts.Core.pdb
